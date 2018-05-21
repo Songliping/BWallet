@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/length_375dp"
+    android:layout_height="@dimen/length_150dp"
+    android:background="@color/FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/length_36dp"
+        android:layout_height="@dimen/length_36dp"
+        android:layout_marginLeft="@dimen/length_30dp"
+        android:layout_marginTop="@dimen/length_26dp"
+        android:src="@drawable/wallet_icon"/>
+
+    <TextView
+        android:id="@+id/item_wallet_name"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_alignTop="@+id/item_icon"
+        android:layout_marginLeft="@dimen/length_14dp"
+        android:text="@string/wallet_name"
+        android:textSize="?textsize13"
+        android:textColor="@color/color_ff64768c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_wallet_addr"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_below="@+id/item_wallet_name"
+        android:layout_alignLeft="@+id/item_wallet_name"
+        android:text="@string/wallet_addr"
+        android:textSize="?textsize13"
+        android:textColor="@color/color_ffb1b9c4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/more_info"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/length_28dp"
+        android:layout_marginTop="@dimen/length_38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_info_icon"/>
+    <view
+        android:id="@+id/line"
+        android:layout_below="@+id/item_icon"
+        android:layout_width="@dimen/length_318dp"
+        android:layout_height="@dimen/length_1dp"
+        android:layout_marginTop="@dimen/length_22dp"
+        android:layout_centerHorizontal="true"
+        style="@style/view_line_1dp"/>
+
+    <TextView
+        android:id="@+id/item_asset_num"
+        android:layout_below="@+id/line"
+        android:layout_toLeftOf="@+id/item_unit"
+        android:layout_marginRight="@dimen/length_2dp"
+        android:layout_marginTop="@dimen/length_12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="34"
+        android:textColor="@color/color_ff7990ac"
+        android:gravity="center"
+        android:textSize="?textsize14"
+        />
+    <TextView
+        android:id="@+id/item_unit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/length_22dp"
+        android:layout_marginTop="@dimen/length_12dp"
+        android:layout_below="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="34"
+        android:textColor="@color/color_ffc6ced8"
+        android:gravity="center"
+        android:textSize="?textsize13"/>
+</RelativeLayout>

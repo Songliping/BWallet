@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bw.bwallet.createwallet.BackupWalletActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/length_12dp"
+        android:layout_marginTop="@dimen/length_12dp" />
+
+
+    <TextView
+        android:id="@+id/last_prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_45dp"
+        android:letterSpacing="0.1"
+        android:text="@string/last_step_back_wallet"
+        android:textColor="@color/color_526D8E"
+        android:textSize="?textsize19" />
+
+
+    <TextView
+        android:id="@+id/important_prompt"
+        android:layout_width="@dimen/length_306dp"
+        android:layout_height="@dimen/length_72dp"
+        android:layout_below="@+id/last_prompt_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_45dp"
+        android:letterSpacing="0.1"
+        android:text="@string/important_prompt"
+        android:textColor="@color/color_526D8E"
+        android:textSize="?textsize13" />
+
+    <LinearLayout
+        android:id="@+id/private_key_ll"
+        android:layout_width="@dimen/length_320dp"
+        android:layout_height="@dimen/length_248dp"
+        android:layout_below="@id/important_prompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_20dp"
+        android:background="@drawable/card_bg"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/length_32dp"
+            android:gravity="center"
+            android:text="@string/do_not_shot_screen"
+            android:textColor="@color/color_ff7990ac"
+            android:textSize="?textsize13" />
+
+        <TextView
+            android:id="@+id/private_key_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/length_20dp"
+            android:gravity="center"
+            android:text="私钥：xxxxxxxxxxx"
+            android:textColor="@color/color_ff7990ac"
+            android:textSize="?textsize12" />
+
+        <TextView
+            android:layout_width="@dimen/length_270dp"
+            android:layout_height="@dimen/length_34dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/length_14dp"
+            android:gravity="center"
+            android:text="@string/write_private_key"
+            android:textColor="@color/color_ff7990ac"
+            android:textSize="?textsize12" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/backup_wallet_tv"
+        android:layout_width="@dimen/length_228dp"
+        android:layout_height="@dimen/length_45dp"
+        android:layout_below="@+id/important_prompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_180dp"
+        android:background="@drawable/blue_rectangle_round"
+        android:gravity="center"
+        android:text="@string/back_wallet"
+        android:textColor="@color/FFFFFF"
+        android:textSize="?textsize14" />
+
+</RelativeLayout>

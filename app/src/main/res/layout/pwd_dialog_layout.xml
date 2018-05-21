@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <!--密码布局是dialog，暂时写在此处-->
+    <RelativeLayout
+        android:layout_below="@+id/last_prompt_title"
+        android:layout_width="@dimen/length_320dp"
+        android:layout_height="@dimen/length_160dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/card_bg">
+
+
+        <ImageView
+            android:layout_width="@dimen/length_12dp"
+            android:layout_height="@dimen/length_12dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/length_26dp"
+            android:layout_marginTop="@dimen/length_20dp"
+            android:src="@drawable/cancle"/>
+
+        <TextView
+            android:id="@+id/input_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_pwd"
+            android:textColor="@color/color_ff50525a"
+            android:textSize="@dimen/text_15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/length_17dp"
+            />
+
+
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_below="@+id/input_pwd_tv"
+            android:layout_width="@dimen/length_306dp"
+            android:layout_height="@dimen/length_0.5dp"
+            android:background="@color/color_ff040404"
+            android:layout_marginTop="@dimen/length_12dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <EditText
+            android:id="@+id/input_pwd_et"
+            android:layout_below="@+id/view_line"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/length_188dp"
+            android:layout_marginTop="@dimen/length_50dp"
+            android:layout_marginBottom="@dimen/length_20dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bw.bwallet.transfer.TransferPreviewActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle01"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <include layout="@layout/header_layout"
+            />
+
+
+        <TextView
+            android:id="@+id/kind_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-5ETH"
+            android:textColor="@color/FFFFFF"
+            android:gravity="center"
+            android:textSize="?textsize38"
+            android:layout_marginTop="@dimen/length_34dp"
+            />
+
+        <TextView
+            android:id="@+id/preview_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="等待签名"
+            android:textColor="@color/FFFFFF"
+            android:textSize="?textsize17"
+            android:alpha="0.58"
+            android:layout_marginTop="@dimen/length_14dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_F9F9F9"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/commit_btn"
+            style="@style/button_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/length_350dp"
+            android:text="@string/commit"
+            android:layout_marginBottom="@dimen/length_108dp"/>
+    </LinearLayout>
+
+</LinearLayout>

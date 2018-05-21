@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bw.bwallet.transfer.TransferOutActivity">
+
+
+    <include layout="@layout/header_layout"
+        />
+
+
+    <EditText
+        android:id="@+id/payee_addr"
+        android:layout_below="@+id/header"
+        style="@style/edit_text_style"
+        android:hint="@string/payee_addr"
+        />
+
+    <EditText
+        android:id="@+id/transfer_count"
+        android:layout_below="@+id/payee_addr"
+        style="@style/edit_text_style"
+        android:hint="@string/transfer_count"
+        />
+
+    <EditText
+        android:id="@+id/transfer_note"
+        android:layout_below="@+id/transfer_count"
+        style="@style/edit_text_style"
+        android:hint="@string/transfer_note"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_alignLeft="@+id/transfer_note"
+        android:layout_marginTop="@dimen/length_46dp"
+        android:layout_below="@+id/transfer_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/absenteeism_cost"
+        android:textColor="@color/color_ffa2a5a9"
+        android:textSize="?textsize13"
+        />
+    <com.warkiz.widget.IndicatorSeekBar
+        android:id="@+id/cost_seeker_bar"
+        android:layout_marginTop="@dimen/length_20dp"
+        android:layout_below="@+id/title"
+        android:layout_width="@dimen/length_350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:isb_seek_bar_type="continuous"
+        app:isb_track_progress_bar_color="@color/color_ff545BDB"
+        app:isb_max="100"
+        app:isb_min="10"
+        app:isb_progress="34"
+        app:isb_track_background_bar_color="@color/color_b5b7bd"
+        app:isb_thumb_drawable="@drawable/move_button_img"
+        app:isb_show_indicator="true" />
+
+    <TextView
+        android:layout_below="@+id/cost_seeker_bar"
+        android:layout_alignLeft="@+id/cost_seeker_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slow"
+        android:textColor="@color/color_ffa2a5a9"
+        android:layout_marginLeft="@dimen/length_20dp"
+        android:textSize="?textsize13"
+        />
+
+    <TextView
+        android:layout_below="@+id/cost_seeker_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fast"
+        android:textColor="@color/color_ffa2a5a9"
+        android:layout_marginLeft="@dimen/length_20dp"
+        android:textSize="?textsize13"
+        android:layout_alignRight="@+id/cost_seeker_bar"
+        android:layout_marginRight="@dimen/length_20dp"
+        />
+
+    <TextView
+        android:id="@+id/cost_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0000212ETH"
+        android:textColor="@color/color_ff5470db"
+        android:textSize="?textsize13"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cost_seeker_bar"
+        android:layout_marginTop="@dimen/length_36dp"
+        />
+
+    <Button
+    android:id="@+id/transfer_next"
+    style="@style/button_style"
+    android:layout_width="@dimen/length_350dp"
+    android:text="@string/transfer_next"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="@dimen/length_120dp"/>
+
+</RelativeLayout>

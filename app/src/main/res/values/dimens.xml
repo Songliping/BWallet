@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="length_0.5dp">0.5dp</dimen>
+    <dimen name="length_1dp">1dp</dimen>
+    <dimen name="length_2dp">2dp</dimen>
+    <dimen name="length_4dp">4dp</dimen>
+    <dimen name="length_6dp">6dp</dimen>
+    <dimen name="length_7dp">7dp</dimen>
+    <dimen name="length_8dp">8dp</dimen>
+    <dimen name="length_10dp">10dp</dimen>
+    <dimen name="length_12dp">12dp</dimen>
+    <dimen name="length_14dp">14dp</dimen>
+    <dimen name="length_17dp">17dp</dimen>
+    <dimen name="length_18dp">18dp</dimen>
+    <dimen name="length_20dp">20dp</dimen>
+    <dimen name="length_22dp">22dp</dimen>
+    <dimen name="length_26dp">26dp</dimen>
+    <dimen name="length_28dp">28dp</dimen>
+    <dimen name="length_30dp">30dp</dimen>
+    <dimen name="length_32dp">32dp</dimen>
+    <dimen name="length_34dp">34dp</dimen>
+    <dimen name="length_36dp">36dp</dimen>
+    <dimen name="length_38dp">38dp</dimen>
+    <dimen name="length_40dp">40dp</dimen>
+    <dimen name="length_45dp">45dp</dimen>
+    <dimen name="length_46dp">46dp</dimen>
+    <dimen name="length_50dp">50dp</dimen>
+    <dimen name="length_51dp">51dp</dimen>
+    <dimen name="length_52dp">52dp</dimen>
+    <dimen name="length_54dp">54dp</dimen>
+    <dimen name="length_56dp">56dp</dimen>
+    <dimen name="length_62dp">62dp</dimen>
+    <dimen name="length_70dp">70dp</dimen>
+    <dimen name="length_72dp">72dp</dimen>
+    <dimen name="length_80dp">80dp</dimen>
+    <dimen name="length_88dp">88dp</dimen>
+    <dimen name="length_90dp">90dp</dimen>
+    <dimen name="length_94dp">94dp</dimen>
+    <dimen name="length_98dp">98dp</dimen>
+    <dimen name="length_109dp">109dp</dimen>
+    <dimen name="length_108dp">108dp</dimen>
+    <dimen name="length_120dp">120dp</dimen>
+    <dimen name="length_126dp">126dp</dimen>
+    <dimen name="length_150dp">150dp</dimen>
+    <dimen name="length_160dp">160dp</dimen>
+    <dimen name="length_180dp">180dp</dimen>
+    <dimen name="length_188dp">188dp</dimen>
+    <dimen name="length_228dp">228dp</dimen>
+    <dimen name="length_208dp">208dp</dimen>
+    <dimen name="length_230dp">230dp</dimen>
+    <dimen name="length_248dp">248dp</dimen>
+    <dimen name="length_258dp">258dp</dimen>
+    <dimen name="length_270dp">270dp</dimen>
+    <dimen name="length_306dp">306dp</dimen>
+    <dimen name="length_312dp">312dp</dimen>
+    <dimen name="length_316dp">316dp</dimen>
+    <dimen name="length_318dp">318dp</dimen>
+    <dimen name="length_320dp">320dp</dimen>
+    <dimen name="length_335dp">335dp</dimen>
+    <dimen name="length_342dp">342dp</dimen>
+    <dimen name="length_350dp">350dp</dimen>
+    <dimen name="length_375dp">375dp</dimen>
+
+
+
+    <!--字体大小-->
+    <dimen name="text_10sp">10sp</dimen>
+    <dimen name="text_11sp">11sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_13sp">13sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_15sp">15sp</dimen>
+    <dimen name="text_17sp">17sp</dimen>
+    <dimen name="text_19sp">19sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_29sp">29sp</dimen>
+    <dimen name="text_38sp">38sp</dimen>
+    <dimen name="text_58sp">58sp</dimen>
+
+
+    <dimen name="text_small2">18sp</dimen>
+    <dimen name="text_middle2">22sp</dimen>
+    <dimen name="text_big2">26sp</dimen>
+
+    <dimen name="text_small3">22sp</dimen>
+    <dimen name="text_middle3">26sp</dimen>
+    <dimen name="text_big3">30sp</dimen>
+
+
+
+</resources>

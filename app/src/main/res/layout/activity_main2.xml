@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bw.bwallet.transfer.TransferRecordActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4"
+    android:background="@drawable/bg2">
+
+    <include layout="@layout/header_layout"/>
+
+        <TextView
+            android:id="@+id/record_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BPX"
+            android:textColor="@color/FFFFFF"
+            android:textSize="?textsize17"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/length_12dp"
+            android:letterSpacing="1"
+            />
+
+
+        <TextView
+            android:id="@+id/record_value"
+            android:layout_below="@+id/record_kind"
+            android:layout_marginTop="@dimen/length_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.000"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/FFFFFF"
+            android:textSize="?textsize29"
+            />
+
+        <TextView
+            android:id="@+id/rmb_asset_value"
+            android:layout_below="@+id/record_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="≈ ¥ 0"
+            android:textColor="@color/color_ffececec"
+            android:layout_centerHorizontal="true"
+            android:textSize="?textsize12"
+
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/color_fff4f4f4">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/record_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_54dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/length_54dp"
+                android:background="@drawable/transfer_bg"
+                android:drawableLeft="@drawable/transfer_icon"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/length_50dp"
+                android:drawablePadding="@dimen/length_10dp"
+                android:text="@string/transfer"
+                android:textColor="@color/FFFFFF"
+                android:textSize="?textsize14"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/length_54dp"
+                android:background="@drawable/garthing_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/length_50dp"
+                android:drawablePadding="@dimen/length_10dp"
+                android:drawableLeft="@drawable/garthering_icon"
+                android:text="@string/transfer"
+                android:textColor="@color/FFFFFF"
+                android:textSize="?textsize14"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/header"
+    android:layout_marginBottom="@dimen/length_12dp"
+    android:layout_marginTop="@dimen/length_12dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/length_10dp"
+        android:layout_height="@dimen/length_17dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/length_26dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_back_gray"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/create_wallet"
+        android:textColor="@color/color_2F4867"
+        android:textSize="?textsize17"
+        android:letterSpacing="0.2"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

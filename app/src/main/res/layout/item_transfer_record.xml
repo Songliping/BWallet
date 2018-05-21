@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/length_375dp"
+    android:layout_height="@dimen/length_94dp"
+    android:background="@color/FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="@dimen/length_36dp"
+        android:layout_height="@dimen/length_36dp"
+        android:layout_marginLeft="@dimen/length_30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/wallet_icon"/>
+
+    <TextView
+        android:id="@+id/item_wallet_name"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_marginLeft="@dimen/length_14dp"
+        android:layout_centerVertical="true"
+        android:text="@string/wallet_name"
+        android:textSize="?textsize19"
+        android:textColor="@color/color_ff7990ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/item_trade_status"
+        android:text="@string/wallet_addr"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:textSize="?textsize12"
+        android:gravity="center"
+        android:textColor="@color/FFFFFF"
+        android:background="@drawable/wait_status"
+        android:layout_width="@dimen/length_98dp"
+        android:layout_height="@dimen/length_34dp" />
+
+    <TextView
+        android:id="@+id/trade_value"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/length_10dp"
+        android:layout_marginRight="@dimen/length_17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-5BPX"
+        android:textColor="@color/color_fff93049"
+        android:textSize="?textsize20"
+        />
+
+
+    <TextView
+        android:id="@+id/trade_rmb_value"
+        android:layout_below="@+id/trade_value"
+        android:layout_alignRight="@+id/trade_value"
+        android:layout_marginTop="@dimen/length_2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="≈ ¥50"
+        android:textColor="@color/color_ff7990ac"
+        android:textSize="?textsize12"
+        />
+    <TextView
+        android:id="@+id/trade_time"
+        android:layout_below="@+id/trade_rmb_value"
+        android:layout_alignRight="@+id/trade_rmb_value"
+        android:layout_marginTop="@dimen/length_2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-03-07"
+        android:textColor="@color/color_ffc2cfdf"
+        android:textSize="?textsize12"
+        />
+</RelativeLayout>

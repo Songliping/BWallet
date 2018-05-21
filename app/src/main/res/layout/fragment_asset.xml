@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_rectangle"
+    tools:context="bw.bwallet.asset.AssetFragment">
+
+        <include layout="@layout/header_layout"
+            android:visibility="invisible"/>
+
+
+        <TextView
+            android:id="@+id/total_asset_value"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="@dimen/length_34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bbbb"
+            android:textColor="@color/FFFFFF"
+            android:textSize="@dimen/text_58sp"
+            />
+
+        <TextView
+            android:id="@+id/total_asset"
+            android:layout_below="@+id/total_asset_value"
+            android:layout_alignLeft="@+id/total_asset_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总资产"
+            android:textColor="@color/color_ffe9f3fb"
+            android:textSize="?textsize11"
+            />
+
+        <TextView
+            android:id="@+id/asset_name"
+            android:layout_below="@+id/total_asset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/total_asset_value"
+            android:text="name"
+            android:textColor="@color/FFFFFF"
+            android:layout_marginTop="@dimen/length_2dp"
+            android:textSize="?textsize20"
+            />
+
+        <TextView
+            android:id="@+id/asset_name_detail"
+            android:layout_below="@+id/asset_name"
+            android:layout_width="151dp"
+            android:layout_height="16dp"
+            android:text="diajdiahdienakdajfdkalnv"
+            android:layout_alignLeft="@+id/asset_name"
+            android:textColor="@color/color_fffbfbfb"
+            android:alpha="0.65"
+            android:layout_marginTop="@dimen/length_2dp"
+            android:textSize="?textsize14"
+            />
+
+
+        <TextView
+            android:id="@+id/asset_scan"
+            android:layout_width="@dimen/length_51dp"
+            android:layout_height="@dimen/length_51dp"
+            android:layout_marginTop="@dimen/length_30dp"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="@dimen/length_20dp"
+            android:layout_alignParentRight="true"
+            android:text="scan"
+            />
+
+        <ImageView
+            android:id="@+id/asset_logo"
+            android:layout_width="@dimen/length_51dp"
+            android:layout_height="@dimen/length_51dp"
+            android:src="@drawable/asset_logo"
+            android:scaleType="fitCenter"
+            android:layout_alignBottom="@+id/total_asset"
+            android:layout_marginRight="@dimen/length_52dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/asset_viewPager"
+            android:layout_width="@dimen/length_316dp"
+            android:layout_height="@dimen/length_312dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/asset_name_detail"
+            android:layout_marginTop="@dimen/length_10dp"
+            android:layout_marginBottom="@dimen/length_20dp"
+            android:layout_centerHorizontal="true"
+            >
+        </android.support.v4.view.ViewPager>
+
+
+        <Button
+            android:id="@+id/asset_add_btn"
+            android:layout_width="@dimen/length_72dp"
+            android:layout_height="@dimen/length_72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/asset_add_btn"/>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_style">
+        <item name="android:textSize">?textsize14</item>
+        <item name="android:layout_width">@dimen/length_258dp</item>
+        <item name="android:layout_height">@dimen/length_52dp</item>
+        <item name="android:textColor">@color/FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/blue_rectangle_round</item>
+    </style>
+</resources>

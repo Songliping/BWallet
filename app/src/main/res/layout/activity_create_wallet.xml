@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F9F9F9">
+
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/length_12dp"
+        android:layout_marginTop="@dimen/length_12dp" />
+
+
+    <TextView
+        android:id="@+id/introduce_wallet_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_51dp"
+        android:layout_below="@+id/header"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="@string/introduction_importance_wallet"
+        android:textColor="@color/FFFFFF"
+        android:textSize="?textsize12" />
+
+    <EditText
+        android:id="@+id/name_wallet_et"
+        style="@style/edit_text_style"
+        android:layout_below="@+id/introduce_wallet_tv"
+        android:layout_marginTop="@dimen/length_32dp"
+        android:hint="@string/name_wallet"
+         />
+
+
+    <EditText
+        android:id="@+id/pwd_wallet_et"
+        style="@style/edit_text_style"
+        android:layout_below="@+id/name_wallet_et"
+        android:hint="@string/pwd_wallet"/>
+
+
+    <EditText
+        android:id="@+id/repeat_pwd_wallet_et"
+        style="@style/edit_text_style"
+        android:layout_below="@+id/pwd_wallet_et"
+        android:hint="@string/repeat_pwd_wallet"
+         />
+
+    <EditText
+        android:id="@+id/prompt_pwd_info_wallet_et"
+        style="@style/edit_text_style"
+        android:layout_below="@+id/repeat_pwd_wallet_et"
+        android:hint="@string/prompt_pwd_info_wallet"
+         />
+
+
+    <CheckBox
+        android:id="@+id/user_protocol_cb"
+        android:layout_width="@dimen/length_335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prompt_pwd_info_wallet_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_20dp"
+        android:hint="@string/user_protocol"
+        android:textSize="?textsize13" />
+
+
+    <TextView
+        android:id="@+id/create_wallet_btn"
+        android:layout_width="@dimen/length_350dp"
+        android:layout_height="@dimen/length_52dp"
+        android:layout_below="@+id/user_protocol_cb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_20dp"
+        android:background="@drawable/blue_rectangle_round"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/create_wallet"
+        android:textColor="@color/FFFFFF"
+        android:textSize="?textsize14" />
+
+    <TextView
+        android:id="@+id/import_wallet_btn"
+        android:layout_width="@dimen/length_335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_wallet_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/length_10dp"
+        android:gravity="center"
+        android:text="@string/import_wallet"
+        android:letterSpacing="0.1"
+        android:textColor="@color/color_526D8E"
+        android:textSize="?textsize14" />
+</RelativeLayout>

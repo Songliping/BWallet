@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+        <!--app主题颜色-->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="view_line_1dp">
+        <item name="android:background">@color/color_fff5f5f5</item>
+        <item name="android:layout_width">@dimen/length_375dp</item>
+        <item name="android:layout_height">@dimen/length_1dp</item>
+    </style>
+    <!--主页button样式-->
+
+    <style name="radioStyle">
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_10sp</item>
+        <item name="android:textColor">@drawable/home_button_selector</item>
+    </style>
+
+
+    <!--我的页面textview样式-->
+    <style name="user_text_style">
+        <item name="android:paddingLeft">@dimen/length_46dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">?textsize15</item>
+        <item name="android:textColor">@color/color_ffa2a5a9</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/length_46dp</item>
+        <item name="android:background">@color/FFFFFF</item>
+    </style>
+    <!--字体大小设置-->
+    <style name="Default_TextSize_Small">
+        <item name="textsize10">@dimen/text_10sp</item>
+        <item name="textsize11">@dimen/text_11sp</item>
+        <item name="textsize12">@dimen/text_12sp</item>
+        <item name="textsize13">@dimen/text_13sp</item>
+        <item name="textsize14">@dimen/text_14sp</item>
+        <item name="textsize15">@dimen/text_15sp</item>
+        <item name="textsize17">@dimen/text_17sp</item>
+        <item name="textsize19">@dimen/text_19sp</item>
+        <item name="textsize20">@dimen/text_20sp</item>
+        <item name="textsize29">@dimen/text_29sp</item>
+        <item name="textsize38">@dimen/text_38sp</item>
+        <item name="textsize58">@dimen/text_58sp</item>
+    </style>
+
+
+    <style name="Default_TextSize_Middle">
+        <item name="textsize12">@dimen/text_small2</item>
+        <item name="textsize14">@dimen/text_middle2</item>
+        <item name="textsize17">@dimen/text_big2</item>
+    </style>
+
+
+    <style name="Default_TextSize_Big">
+        <item name="textsize12">@dimen/text_small3</item>
+        <item name="textsize14">@dimen/text_middle3</item>
+        <item name="textsize17">@dimen/text_big3</item>
+    </style>
+
+
+
+    <!--edittext  创建钱包，修改密码样式-->
+
+
+    <style name="edit_text_style">
+        <item name="android:textSize">?textsize13</item>
+        <item name="android:layout_width">@dimen/length_335dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/length_20dp</item>
+    </style>
+
+<!--按钮样式-->
+    <style name="button_style">
+        <item name="android:textSize">?textsize14</item>
+        <item name="android:layout_width">@dimen/length_258dp</item>
+        <item name="android:layout_height">@dimen/length_52dp</item>
+        <item name="android:textColor">@color/FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/blue_rectangle_round</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">BWallet</string>
+    <string name="create_wallet">创建钱包</string>
+    <string name="import_wallet">导入钱包</string>
+    <string name="private_key">私钥</string>
+    <string name="introduction_importance_wallet">钱包密码及秘钥重要性说明</string>
+    <string name="name_wallet">钱包名称</string>
+    <string name="pwd_wallet">密码</string>
+    <string name="repeat_pwd_wallet">重复密码</string>
+    <string name="prompt_pwd_info_wallet">密码提示信息(选填)</string>
+    <string name="user_protocol">用户协议</string>
+
+    <string name="name_not_empty">钱包名称不能为空！</string>
+    <string name="pwd_not_empty">密码不能为空！</string>
+    <string name="pwd_not_same">密码不一致！</string>
+    <string name="choose_user_protocol">请同意用户协议！</string>
+
+
+    <string name="plaintext_private_key">明文私钥</string>
+    <string name="service_protocol">服务协议</string>
+    <string name="start_import_wallet">开始导入</string>
+
+
+    <!--备份钱包-->
+
+    <string name="back_wallet">备份钱包</string>
+    <string name="input_pwd">请输入密码</string>
+    <string name="last_step_back_wallet">最后一步：立即备份你的钱包</string>
+    <string name="important_prompt">备份钱包： 将导出【私钥】，确认备份后私钥 将加密存储到本地不再支持查询，请将【私钥】 抄写到安全的地方，千万不要保存到网络上。 然后尝试转入或转出小额资产开始使用。</string>
+    <string name="do_not_shot_screen">请勿截图</string>
+    <string name="write_private_key">如果有人获取你的私钥将直接获取你的资产！ 请抄写下私钥并存放在安全的地方。</string>
+
+
+    <!--主页-->
+
+    <string name="home_asset">资产</string>
+    <string name="home_quotation">行情</string>
+    <string name="home_user">我的</string>
+
+
+    <string name="manage_wallet">管理钱包</string>
+    <string name="trades_record">交易记录</string>
+    <string name="manage_contacts">联系人管理</string>
+    <string name="manage_language">语言管理</string>
+    <string name="wallet_name">名称</string>
+    <string name="wallet_addr">地址</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="delete_wallet">删除钱包</string>
+
+    <!--修改密码-->
+    <string name="current_pwd">当前密码</string>
+    <string name="new_pwd">新密码</string>
+    <string name="reset_new_pwd">重置新密码</string>
+    <string name="prompt_info">忘记密码？\n\r 可通过私钥重新导入钱包进行重置密码。</string>
+    <string name="import_now">马上导入</string>
+
+
+    <!--转账-->
+    <string name="payee_addr">收款人钱包地址</string>
+    <string name="transfer_count">转账金额</string>
+    <string name="transfer_note">备注</string>
+    <string name="transfer_next">下一步</string>
+    <string name="absenteeism_cost">矿工费用</string>
+    <string name="fast">快</string>
+    <string name="slow">慢</string>
+    <string name="commit">提交</string>
+    <string name="transfer">转账</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

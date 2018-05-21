@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bw.bwallet.user.ChangePwdActivity">
+
+
+    <include
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/length_26dp"
+        android:layout_marginTop="@dimen/length_12dp"
+        />
+
+    <EditText
+        android:id="@+id/change_current_pwd"
+        style="@style/edit_text_style"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/length_30dp"
+        android:hint="@string/current_pwd"
+        />
+
+
+    <EditText
+        android:id="@+id/change_new_pwd"
+        style="@style/edit_text_style"
+        android:layout_below="@+id/change_current_pwd"
+        android:hint="@string/new_pwd"/>
+
+
+    <EditText
+        android:id="@+id/reset_pwd_wallet_et"
+        style="@style/edit_text_style"
+        android:layout_below="@+id/change_new_pwd"
+        android:hint="@string/reset_new_pwd"
+        />
+    
+    <TextView
+        android:id="@+id/prompt_info"
+        android:layout_below="@+id/reset_pwd_wallet_et"
+        android:layout_alignLeft="@+id/reset_pwd_wallet_et"
+        android:layout_marginTop="@dimen/length_26dp"
+        android:layout_width="@dimen/length_230dp"
+        android:layout_height="@dimen/length_32dp"
+        android:textColor="@color/color_ff8997A9"
+        android:textSize="?textsize13"
+        android:text="@string/prompt_info"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/prompt_info"
+        android:layout_alignBottom="@+id/prompt_info"
+        android:layout_marginLeft="@dimen/length_2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/length_18dp"
+        android:text="@string/import_now"
+        android:textColor="@color/color_ff5470db"
+        android:textSize="?textsize13"
+        />
+
+
+    <Button
+        style="@style/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/length_52dp"
+        android:text="@string/delete_wallet"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

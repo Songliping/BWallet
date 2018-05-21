@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bw.bwallet.user.WalletDetailInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/color_fff5f5f5">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4"
+        android:background="@drawable/dark_blue_rectangle"
+        >
+
+        <include
+            layout="@layout/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/length_26dp"
+            android:layout_marginTop="@dimen/length_12dp"
+            />
+
+
+        <ImageView
+
+            android:id="@+id/wallet_detail_icon"
+            android:layout_below="@+id/header"
+            android:layout_width="@dimen/length_80dp"
+            android:layout_height="@dimen/length_80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/wallet_icon"
+            android:scaleType="fitCenter"
+            android:padding="@dimen/length_20dp"
+            android:background="@drawable/oval_img"
+
+            />
+
+        <TextView
+            android:id="@+id/wallet_detail_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet_detail_icon"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/wallet_name"
+            android:textColor="@color/FFFFFF"
+            android:textSize="?textsize15" />
+
+
+        <TextView
+            android:id="@+id/wallet_detail_content"
+            android:layout_below="@+id/wallet_detail_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="?textsize13"
+            android:textColor="@color/FFFFFF"
+            android:text="sdfljdlfds"
+            android:alpha="0.64"
+            android:layout_marginTop="@dimen/length_10dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    <TextView
+        android:id="@+id/wallet_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_56dp"
+        android:background="@color/FFFFFF"
+        android:textSize="?textsize15"
+        android:textColor="@color/color_ff8997A9"
+        android:gravity="center_vertical"
+        android:letterSpacing="2"
+        android:paddingLeft="@dimen/length_30dp"
+        android:text="@string/wallet_name"/>
+
+
+        <TextView
+            android:id="@+id/wallet_detail_change_pwd"
+            android:layout_below="@+id/wallet_detail_name"
+            android:layout_marginTop="@dimen/length_1dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/length_56dp"
+            android:textSize="?textsize15"
+            android:textColor="@color/color_ff8997A9"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/length_30dp"
+            android:text="@string/change_pwd"
+            android:letterSpacing="2"
+            android:background="@color/FFFFFF"/>
+
+
+
+        <Button
+            android:id="@+id/wallet_detail_delete_wallet"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/length_258dp"
+            android:layout_height="@dimen/length_51dp"
+            android:background="@drawable/blue_rectangle_round"
+            android:layout_marginBottom="@dimen/length_40dp"
+            android:textColor="@color/FFFFFF"
+            android:textSize="?textsize14"
+            android:gravity="center"
+            android:text="@string/delete_wallet"/>
+    </RelativeLayout>
+
+</LinearLayout>

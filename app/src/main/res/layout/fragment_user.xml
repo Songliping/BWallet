@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/blue_rectangle"
+        >
+        <include layout="@layout/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/length_12dp"
+            android:layout_marginTop="@dimen/length_12dp"
+            />
+
+
+        <TextView
+            android:id="@+id/manage_wallet_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/length_80dp"
+            android:drawableTop="@drawable/manage_wallet_img"
+            android:drawablePadding="@dimen/length_14dp"
+            android:text="@string/manage_wallet"
+            android:textColor="@color/FFFFFF"
+            android:textSize="?textsize13"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/length_30dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/trade_record_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/length_80dp"
+            android:drawableTop="@drawable/trade_record"
+            android:drawablePadding="@dimen/length_14dp"
+            android:text="@string/trades_record"
+            android:textColor="@color/FFFFFF"
+            android:textSize="?textsize13"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/manage_wallet_tv"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/length_10dp"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/user_create_wallet"
+            style="@style/user_text_style"
+            android:text="@string/create_wallet"
+            />
+
+        <View
+            style="@style/view_line_1dp"
+
+            />
+
+        <TextView
+            android:id="@+id/user_important_wallet"
+            style="@style/user_text_style"
+            android:text="@string/import_wallet"
+            />
+
+        <TextView
+            android:id="@+id/user_contacts_manage"
+            android:layout_marginTop="@dimen/length_8dp"
+            style="@style/user_text_style"
+            android:text="@string/manage_contacts"
+            />
+
+        <View
+            style="@style/view_line_1dp"
+
+            />
+
+        <TextView
+            android:id="@+id/user_manage_language"
+            style="@style/user_text_style"
+            android:text="@string/manage_language"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
